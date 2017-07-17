@@ -15,7 +15,7 @@ class Main extends PluginBase implements Listener{
   }
   
   public function onMove(PlayerMoveEvent $event){
-    if($player->hasPermission("Heart.particle")){
+    if($player->hasPermission("Heart.permission")){
       $player->getLevel()->addParticle(new HeartParticle($player));
     }
   }
